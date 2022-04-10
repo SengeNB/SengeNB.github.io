@@ -9,10 +9,15 @@ body{
     margin: 10px;
     background-color: lightgray;
 }
-.assignment image{
+.assignment image{ 
     width: 200px;
     padding: 10px;
 
+}
+.assignment img{
+    width: 200px;
+    margin:10px;
+    border:4px solid#FFF;
 }
 h1{
     color: rgb(50, 135, 204);
