@@ -1,5 +1,32 @@
-/* Second Layer - Placeholder */
+/* 第二层 - Skill Tree 页面 */
 #layer2 {
-    background-color: lightblue;
-    color: black;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* 标题 */
+#layer2 h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Skill Tree 容器 */
+#skill-tree-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SVG 树的样式 */
+#skill-tree {
+    width: 100%;
+    height: 100%;
 }
