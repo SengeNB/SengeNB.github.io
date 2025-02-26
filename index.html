@@ -1,94 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CSCE190 : Sen Zhang</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>Sen's CSCE 190 Site</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sen Zhang - Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layer1.css">
+    <link rel="stylesheet" href="layer2.css">
+</head>
+<body>
 
-        <! -- Probelm-statement assignment-->
-        <section class="assignment">
-            <a href="files/problem-statement.pdf"><img src="images/Probelm-statement.png"</a>
-            <section class = "ass-details">
-                <a href="files/problem-statement.pdf"><h2>problem-statement: Bar</h2></a>
-                <p>
-                    Our users can easily see how crowded each bar is and how long it takes to wait.
-                </p>
-            </section>
-        </section>
+    <div id="main-container">
+        <!-- 第一层 -->
+        <div class="layer" id="layer1">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <h1>Sen Zhang</h1>
+                    <h2>Master’s in Computer Science | Johns Hopkins University (JHU)</h2>
+                    <h3>Bachelor’s in Computer Science | University of South Carolina (USC)</h3>
+                    <p>
+                        An enthusiastic and dedicated Computer Science professional currently pursuing a Master's degree at 
+                        Johns Hopkins University, with a Bachelor's degree from the University of South Carolina. 
+                        My academic and professional journey is driven by a profound love for algorithms and software engineering, 
+                        inspiring continuous learning and innovation in these fields.
+                    </p>
+                    <p>
+                        I have a strong foundation in data structures, software engineering principles, and big data analytics, 
+                        supported by a solid academic record. As a Research Assistant at USC’s iMSEL Lab, 
+                        I contributed to pioneering projects, including developing a computer vision model for railway monitoring, 
+                        demonstrating my ability to translate theoretical knowledge into impactful real-world applications.
+                    </p>
+                    <p>
+                        My research focuses on real-time systems, anomaly detection, image processing, and deep learning models 
+                        such as Transformers and YOLO. With multiple publications showcasing my contributions, 
+                        I have demonstrated a strong ability to bridge theoretical knowledge with practical applications.
+                    </p>
+                </div>
+                <div class="intro-right">
+                    <div class="intro-image">
+                        <img src="images/headshot.png" alt="Sen Zhang">
+                    </div>
+                    <!-- Contact Section - Moved Below the Image -->
+                    <div class="contact-section">
+                        <h2>Contact & Profiles</h2>
+                        <p>Email: <a href="mailto:zhangsen2001@gmail.com">zhangsen2001@gmail.com</a></p>
+                        <ul>
+                            <li><a href="files/CV-Sen Zhang_2025_6.pdf" target="_blank">📄 View My CV</a></li>
+                            <li><a href="https://www.linkedin.com/in/sen-zhang-44004b239/" target="_blank">🔗 LinkedIn</a></li>
+                            <li><a href="https://scholar.google.com/citations?user=ZI5_wA0AAAAJ&hl=zh-CN" target="_blank">🎓 Google Scholar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <! -- affinity Diagram assignment-->
-        <section class="assignment">
-            <a href="files/affinity-diagram.pdf"><img src="images/Affinity-diagram.png"</a>
-            <section class = "ass-details">
-                <a href="files/affinity-diagram.pdf"><h2>Affinity-diagram: Bar </h2></a>
-                <p>
-                    My group and I worked together to brainstorm all things about our app.
-                </p>
-            </section>
-        </section>
-        <! -- affinity Diagram assignment-->
-        <section class="assignment">
-            <a href="files/personna.pdf"><img src="images/personna.png"</a>
-            <section class = "ass-details">
-                <a href="files/personna.pdf"><h2>personna: Niu Bi </h2></a>
-                <p>
-                    A personna of a typical trail mix app coder.
-                </p>
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <div class="arrow"></div>
+        </div>
 
-            </section>
-        </section>
-        <! -- affinity Diagram assignment-->
-        <section class="assignment">
-            <a href="files/storyboard.pdf"><img src="images/storyboard.png"</a>
-            <section class = "ass-details">
-                <a href="files/storyboard.pdf"><h2>storyboard </h2></a>
-                <p>
-                    A personna of the storyboard.
-                </p>
+        <!-- 第二层 -->
+        <div class="layer" id="layer2">
+            <h1>Second Page</h1>
+        </div>
+    </div>
 
-            </section>
-        </section>
+    <script src="script.js"></script>
 
-        <! -- Teams Sketches assignment-->
-        <section class="assignment">
-            <a href="files/Bar.pdf"><img src="images/Bar.png"</a>
-            <section class = "ass-details">
-                <a href="files/Bar.pdf"><h2>Teams Sketches : Bar </h2></a>
-                <p>
-                    Simple composition for bar Application
-                </p>
-
-            </section>
-        </section>
-
-        <! -- Prototype assignment-->
-        <section class="assignment">
-            <a href="https://www.youtube.com/watch?v=oAHLe36yOnI">
-                <img src="images/prototype.png"</a>
-            <section class = "ass-details">
-                <a href="https://www.youtube.com/watch?v=oAHLe36yOnI">
-                    <h2>Paper Prototype </h2></a>
-                <p>
-                    A paper walkthrough of the potnetial look of every screen in the Application.
-                </p>
-
-            </section>
-        </section>
-
-        <! -- High Fidelity Prototype-->
-        <section class="assignment">
-            <a href="https://cmartin2288.github.io/files/BarFinderApp-html/fullscreen.html">
-                <img src="images/Barapplication.png"</a>
-            <section class = "ass-details">
-                <a href="https://cmartin2288.github.io/files/BarFinderApp-html/fullscreen.html">
-                    <h2>HiFi prototype</h2></a>
-                <p>
-                    Our group created a detailed prototype showing what our app might actually look like in practice!
-                </p>
-
-            </section>
-        </section>
-    </body>
-<html>
+</body>
+</html>

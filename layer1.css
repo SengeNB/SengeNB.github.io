@@ -1,0 +1,137 @@
+/* 第一层 - 个人介绍 */
+#layer1 {
+    background-color: black;
+    color: white;
+    position: relative; /* 让滚动指示器正确定位 */
+}
+
+/* 介绍部分 */
+.intro-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 文字区域 */
+.intro-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.intro-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.intro-text h2, .intro-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* 头像和联系方式部分 */
+.intro-right {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 向上移动头像 */
+.intro-image {
+    margin-top: 50px; /* 头像上移 */
+}
+
+.intro-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* 联系方式区域 */
+.contact-section {
+    text-align: center;
+    margin-top: 20px; /* 让它靠近头像 */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.contact-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Email 样式 */
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-section a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #f5a623;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #ffcc00;
+}
+
+/* 列表样式 */
+.contact-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-section ul li {
+    margin: 10px 0;
+}
+
+/* Scroll Down Indicator */
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    animation: fadeBlink 1.5s infinite;
+}
+
+/* Arrow animation */
+.arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(-45deg);
+    margin: 10px auto 0;
+    animation: bounce 1.5s infinite;
+}
+
+/* Flashing text effect */
+@keyframes fadeBlink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Bouncing arrow animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(-45deg); }
+    50% { transform: translateY(10px) rotate(-45deg); }
+}

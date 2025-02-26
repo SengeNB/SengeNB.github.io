@@ -1,25 +1,35 @@
-body{
-    background-color:rgb(255, 123, 0);
-    font-family: Arial, Helvetica, sans-serif;
-    
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevents default scrolling */
 }
-.assignment{
-    display:flex;
-    padding:10px;
-    margin: 10px;
-    background-color: lightgray;
-}
-.assignment image{ 
-    width: 200px;
-    padding: 10px;
 
+/* Container that holds all layers */
+#main-container {
+    width: 100vw;
+    height: 200vh; /* Total height = 2 pages */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.8s ease-in-out; /* Smooth scrolling effect */
 }
-.assignment img{
-    width: 200px;
-    margin:10px;
-    border:4px solid#FFF;
+
+/* Layer Styling */
+.layer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h1{
-    color: rgb(50, 135, 204);
-    text-align: center;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/* 让所有文本默认使用 Raleway 字体 */
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
 }
